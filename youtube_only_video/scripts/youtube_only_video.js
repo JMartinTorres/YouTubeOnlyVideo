@@ -3,8 +3,8 @@ chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
     if (msg.action == 'void') {
 
         // Black backgrounds
-        $('body > ytd-app').css("backgroundColor", "black");
-        $('#page-manager > ytd-watch-flexy').css("backgroundColor", "black");
+        $('body > ytd-app').css('cssText', "background-color: black !important");
+        $('#page-manager > ytd-watch-flexy').css('cssText', "background-color: black !important");
 
         // Remove elements from view
         // Upper banner
